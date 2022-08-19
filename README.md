@@ -27,7 +27,8 @@ Install the following:
 
 ## Usage
 
-Run index.js from the command line and answer command line prompts to view and manage business data.
+ To seed the database: node seeds/index 
+ To start the program: node server.js
 
 ## License
 

@@ -3,7 +3,7 @@ Class project to build an e-commerce back end using sequelize
 
 ## Description:
 
-Allows a business owner to view and manage the departments, roles, and employees in their company so that they can organize and plan their business from command line inputs.
+Allows a business owner to view and manage the categories, products and their tags to do ecommerce.
 
 ## Table of Contents
 
@@ -21,12 +21,9 @@ Allows a business owner to view and manage the departments, roles, and employees
 Clone this repository and run this line: npm init --y
 Install the following:  
 
-  npm install mysql2
-  npm i inquirer@8.2.4
-  npm install console.table --save
-
 ## Usage
 
+ To create the database db/schema.sql 
  To seed the database: node seeds/index 
  To start the program: node server.js
 
@@ -40,9 +37,9 @@ Fork the repository and do a pull request for your code to be reviewed.
 
 ## Tests
 
-  Run db.sql to drop and add the database.
-  Run schemas.sql to create the tables.
-  Run seeds.sql to populate the tables with test data.
+  Run db/schema.sql to drop and add the database.
+  Run node seeds/index to create and seed the tables.
+  Run node server to start the server
 
 ## Questions?
 
@@ -52,6 +49,6 @@ Please address any questions to me at jennifer.byrnes@outlook.com
 
 ## Video Walkthrough
 
-https://watch.screencastify.com/v/KVfaCo4CvIowrMlexXlD
+https://drive.google.com/file/d/1KJUslAxVDGSEKeK1s1ELTpfQgHUhRUvi/view
   
   

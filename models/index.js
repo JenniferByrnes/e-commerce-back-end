@@ -17,25 +17,25 @@ Category.hasMany(Product, {
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  as: 'tagged_product',
+  //as: 'tagged_product',
   foreignKey: 'product_id'
 });
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   through: ProductTag,
-  as: 'tagged_product',
+  //as: 'tagged_product',
+  foreignKey: 'tag_id'
+});
+/*
+Tag.belongsToMany(ProductTag, {
   foreignKey: 'tag_id'
 });
 
-Tag.hasMany(ProductTag, {
-  foreignKey: 'tag_id'
-});
-
-Product.hasMany(ProductTag, {
+Product.belongsToMany(ProductTag, {
   foreignKey: 'product_id'
 });
-
+*/
 ProductTag.belongsTo(Tag, {
   foreignKey: 'tag_id'
 });
